@@ -18,8 +18,6 @@ class Genre
   end
 
   def songs
-    self.all.each do |genre|
-      genre.songs
-    end
+    Song.all.collect {|song| song.genre == self}
   end
 end
