@@ -16,8 +16,8 @@ class Artist
     self.songs.collect {|song| song.genre}
   end
 
-  def new_song(name, genre)
-    song = Song.new(name, self, genre)
+  def new_song(song_name, genre)
+    song = Song.new(song_name, self, genre)
     @songs << song
   end
 
