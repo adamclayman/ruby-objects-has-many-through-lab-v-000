@@ -22,9 +22,7 @@ class Artist
   end
 
   def self.songs
-    self.all.each do |artist|
-      artist.songs.collect {|song| song.artist == self}
-    end
+    Song.all.select {|song| song.artist == self}
   end
 
 end
