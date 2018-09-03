@@ -18,6 +18,8 @@ class Genre
   end
 
   def songs
-    self.all.select {|genre| genre}
+    self.all.each do |genre|
+      genre.songs
+    end
   end
 end
