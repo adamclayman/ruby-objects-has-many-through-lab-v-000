@@ -18,7 +18,7 @@ class Artist
   end
 
   def songs
-    @songs.collect {|song| song.artist == self}
+    self.all.collect {|song| song.artist == self}
   end
 
 end
