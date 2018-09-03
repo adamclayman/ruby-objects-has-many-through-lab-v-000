@@ -1,2 +1,3 @@
 class Patient
+  @@all = []
 end
