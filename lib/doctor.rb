@@ -3,6 +3,7 @@ class Doctor
 
   def initialize(name)
     @name = name
+    @@all << sef
   end
 
   def self.all
